@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide Talent | Global Hospitality Consultancy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --dark: #0a1118;
+            --accent: #00d2ff;
+            --soft-bg: #f8f9fa;
+            --slate: #4a5568;
+        }
+
+        body { font-family: 'Inter', sans-serif; color: var(--dark); overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* Modern Navbar */
+        .navbar { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #eee; }
+        .nav-link { font-weight: 600; font-size: 0.9rem; color: var(--dark) !important; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero Section - Split Layout */
+        .hero { position: relative; padding: 160px 0 100px; background: #fff; }
+        .hero-title { font-size: 4.5rem; line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero-badge { display: inline-block; padding: 5px 15px; background: var(--soft-bg); border-radius: 50px; font-size: 0.8rem; font-weight: 700; color: var(--slate); margin-bottom: 20px; }
+
+        /* Modern Cards */
+        .service-card {
+            border: 1px solid #eef0f2;
+            padding: 40px;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            background: white;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+            border-color: var(--accent);
+        }
+        .icon-circle {
+            width: 60px; height: 60px;
+            background: var(--soft-bg);
+            border-radius: 15px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; margin-bottom: 25px; transition: 0.3s;
+        }
+        .service-card:hover .icon-circle { background: var(--dark); color: white; }
+
+        /* Workshop Section */
+        .workshop-item { border-left: 3px solid #eee; padding-left: 30px; margin-bottom: 40px; position: relative; }
+        .workshop-item:hover { border-left-color: var(--accent); }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; padding: 80px 0 30px; }
+        .contact-pill { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">TIDE<span class="text-info">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link mx-2" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#programmes">Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#workshops">Workshops</a></li>
+                    <li class="nav-item ms-lg-4"><a class="btn btn-dark px-4 rounded-pill shadow-sm" href="tel:0790081550">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero"  style="background: url('./assests/img/ship.avif') no-repeat center center/cover;">
+        
+        <div class="overlay"></div>
+
+        <div class="container text-center">
+            <span class="hero-badge text-muted">GLOBAL HOSPITALITY CONSULTANCY</span>
+            <h1 class="hero-title text-light">Turn Your Passion Into a <br><span class="text-info">Global Career.</span></h1>
+            <p class="lead  mx-auto mb-5 text-light" style="max-width: 700px;">
+                Tide Talent ensures candidates are <strong>fit for purpose</strong> for the international hospitality industry. From cruise ships to five-star hotels.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-dark btn-lg px-5 rounded-pill">Join a Programme</button>
+                <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Our Story</button>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 17, 24, 0.6);
+            z-index: 1;
+        }
+        .hero .container { position: relative; z-index: 2; }
+    </style>
+
+
+
+
+
+    <section id="programmes" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Skills Training</h4>
+                        <p class="text-muted small">Building foundations in culinary arts and customer excellence.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="fa-solid fa-compass"></i></div>
+                        <h4>Career Mentorship</h4>
+                        <p class="text-muted small">Guiding you through international expectations and growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="fa-solid fa-handshake"></i></div>
+                        <h4>Recruitment</h4>
+                        <p class="text-muted small">Direct links to vetted global recruiters and job openings.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="icon-circle"><i class="fa-solid fa-briefcase"></i></div>
+                        <h4>Readiness</h4>
+                        <p class="text-muted small">CV building, mock interviews, and confidence training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workshops" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="display-5 mb-4">Hands-on <br>Workshops</h2>
+                    <p class="text-muted">Equipping you with real industry skills to shine in front of global employers.</p>
+                    <img src="https://images.unsplash.com/photo-1541516166103-3ad06a307521?auto=format&fit=crop&q=80" class="img-fluid rounded-4 mt-4 shadow" alt="Culinary">
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="workshop-item">
+                        <h5>01. Practical Mastery</h5>
+                        <p class="text-muted">Polish your practical knowledge and presentation skills to international standards.</p>
+                    </div>
+                    <div class="workshop-item">
+                        <h5>02. Experience Articulation</h5>
+                        <p class="text-muted">Master the art of confidently explaining your professional journey during interviews.</p>
+                    </div>
+                    <div class="workshop-item">
+                        <h5>03. Employer Insights</h5>
+                        <p class="text-muted">Understand exactly what global employers are looking for in the current market.</p>
+                    </div>
+                    <div class="workshop-item">
+                        <h5>04. Onboarding Support</h5>
+                        <p class="text-muted">Full preparation for documentation, visas, and international onboarding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="display-6 mb-3 text-info">Ready to start?</h2>
+                    <p class="text-secondary">Visit us at 1st Floor, Kampus Towers, University Way, Nairobi.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-pill d-flex align-items-center justify-content-between">
+                        <div>
+                            <span class="d-block text-secondary small">Call Our Experts</span>
+                            <span class="fs-4 fw-bold text-white">0790081550</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right fs-3 text-info"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 text-center text-secondary small">
+                <p>&copy; 2026 Tide Talent Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
